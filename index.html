@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c11f692228.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,14 +16,64 @@
                     <img class="nav__logo--img" src="./assets3/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt=""> 
                     <div class="nav__logo--title">TReact</div>
                 </div>
-                <div class="nav__links">
-                    <a class="nav__link" href="#">About</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Pricing</a>
-                    <a class="nav__link" href="#">Contact Us</a>
-                    <a class="nav__link login" href="#">Login</a>
-                    <a class="nav__link nav__link--primary" href="#">Sign Up</a>
-                </div>
+                <ul class="nav__link--list">
+                   <li class="nav__link">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect" href="#landing">About</a>
+                   </li>
+                   <li class="nav__link">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect" href="#">Blog</a>
+                   </li>
+                   <li class="nav__link">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect" href="#pricing">Pricing</a>
+                   </li>
+                   <li class="nav__link">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect" href="#start">Contact Us</a>
+                   </li>
+                   <li class="nav__link">
+                    <a class="
+                    nav__link--anchor
+                    link__hover-effect
+                    nav__link--anchor-login" href="#landing">Login</a>
+                   </li>
+                   <li class="nav__link">
+                    <a class="
+                    nav__link--anchor
+                    nav__link--anchor-primary" href="#landing">Sign Up</a>
+                   </li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#">Login</a>
+                        </li>
+                        <li class="menu__list menu__list--primary">
+                            <a class="menu__list--white" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+            </div>
             </div>
         </nav>
         <header>
@@ -71,7 +122,7 @@
                         <div class="feature">
                             <div class="feature__row">
                                 <figure class="feature__img--wrapper">
-                                    <img class="feature__img" src="./assets3/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                                    <img class="feature__img" src="./assets3/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="">
                                 </figure>
                                 <div class="feature__text">
                                     <h2 class="feature__title">24/7 Support</h2>
@@ -82,7 +133,7 @@
                         <div class="feature">
                             <div class="feature__row">
                                 <figure class="feature__img--wrapper">
-                                    <img class="feature__img" src="./assets3/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                                    <img class="feature__img" src="./assets3/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
                                 </figure>
                                 <div class="feature__text">
                                     <h2 class="feature__title">Customizable</h2>
@@ -93,7 +144,7 @@
                         <div class="feature">
                             <div class="feature__row">
                                 <figure class="feature__img--wrapper">
-                                    <img class="feature__img" src="./assets3/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                                    <img class="feature__img" src="./assets3/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="">
                                 </figure>
                                 <div class="feature__text">
                                     <h2 class="feature__title">Reliable</h2>
@@ -104,7 +155,7 @@
                         <div class="feature">
                             <div class="feature__row">
                                 <figure class="feature__img--wrapper">
-                                    <img class="feature__img" src="./assets3/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                                    <img class="feature__img" src="./assets3/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="">
                                 </figure>
                                 <div class="feature__text">
                                     <h2 class="feature__title">Fast</h2>
@@ -115,7 +166,7 @@
                         <div class="feature">
                             <div class="feature__row">
                                 <figure class="feature__img--wrapper">
-                                    <img class="feature__img" src="./assets3/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                                    <img class="feature__img" src="./assets3/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="">
                                 </figure>
                                 <div class="feature__text">
                                     <h2 class="feature__title">Easy</h2>
@@ -150,7 +201,7 @@
         <section id="steps">
             <div class="container">
                 <div class="row">
-                    <figure class="steps__img-wrapper">
+                    <figure class="steps__img--wrapper">
                         <img class="steps__img" src="assets3/hero-screenshot-2.241aac1fbc66db29d873.png" alt="">
                     </figure>
                     <div class="steps__description">
@@ -356,38 +407,38 @@
             <div class="footer__columns">
                 <div class="footer__column">
                     <div class="footer__column--title">MAIN</div>
-                    <a class="footer__column--link">"Blog"</a>
-                    <a class="footer__column--link">"FAQs"</a>
-                    <a class="footer__column--link">"Support"</a>
-                    <a class="footer__column--link">"About Us"</a>
+                    <a class="footer__column--link">Blog</a>
+                    <a class="footer__column--link">FAQs</a>
+                    <a class="footer__column--link">Support</a>
+                    <a class="footer__column--link">About Us</a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">MAIN</div>
-                    <a class="footer__column--link">"Blog"</a>
-                    <a class="footer__column--link">"FAQs"</a>
-                    <a class="footer__column--link">"Support"</a>
-                    <a class="footer__column--link">"About Us"</a>
+                    <a class="footer__column--link">Blog</a>
+                    <a class="footer__column--link">FAQs</a>
+                    <a class="footer__column--link">Support</a>
+                    <a class="footer__column--link">About Us</a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">MAIN</div>
-                    <a class="footer__column--link">"Blog"</a>
-                    <a class="footer__column--link">"FAQs"</a>
-                    <a class="footer__column--link">"Support"</a>
-                    <a class="footer__column--link">"About Us"</a>
+                    <a class="footer__column--link">Blog</a>
+                    <a class="footer__column--link">FAQs</a>
+                    <a class="footer__column--link">Support</a>
+                    <a class="footer__column--link">About Us</a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">MAIN</div>
-                    <a class="footer__column--link">"Blog"</a>
-                    <a class="footer__column--link">"FAQs"</a>
-                    <a class="footer__column--link">"Support"</a>
-                    <a class="footer__column--link">"About Us"</a>
+                    <a class="footer__column--link">Blog</a>
+                    <a class="footer__column--link">FAQs</a>
+                    <a class="footer__column--link">Support</a>
+                    <a class="footer__column--link">About Us</a>
                 </div>
                 <div class="footer__column">
                     <div class="footer__column--title">MAIN</div>
-                    <a class="footer__column--link">"Blog"</a>
-                    <a class="footer__column--link">"FAQs"</a>
-                    <a class="footer__column--link">"Support"</a>
-                    <a class="footer__column--link">"About Us"</a>
+                    <a class="footer__column--link">Blog</a>
+                    <a class="footer__column--link">FAQs</a>
+                    <a class="footer__column--link">Support</a>
+                    <a class="footer__column--link">About Us</a>
                 </div>
             </div>
             <div class="footer__divider"></div>

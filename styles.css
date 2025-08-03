@@ -436,11 +436,11 @@ header .row {
 }
 
 .features__blob {
-    transform: translateX(90px) translateY(1200px) scaleX(1) scaleY(1);
+    transform: translateX(100px) translateY(200px) scaleX(1) scaleY(1);
     position: absolute;
     right: 0px;
     bottom: 0px;
-    width: 16rem;
+    width: 14rem;
     opacity: 0.25;
     padding: 16px;
 }
@@ -468,6 +468,24 @@ header .row {
     border: 1px solid rgb(229 231 235);
     margin: 1px;
     display: flex;
+}
+
+.quality__img {
+    z-index: 1;
+}
+
+.quality__grid {
+    transform: translateX(20%) translateY(1400px) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
 }
 
 
@@ -771,7 +789,16 @@ header .row {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
-
+.plans__blob {
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%) translateY(4000px) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
+}
 
 /* TESTIMONIALS */
 
@@ -876,6 +903,16 @@ header .row {
     background: lightgray
 }
 
+.start__blob--2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(80px) translateY(-256px);
+    width: 320px;
+    height: 320px;
+    z-index: 1;
+    opacity: 0.5;
+}
 
 /* START */
 
